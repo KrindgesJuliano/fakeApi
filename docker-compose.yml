@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  json-server:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+      target: production
+    volumes:
+      - .:/src
+    command: npm run start
+    ports:
+      - "3032:3032"
+    environment:
+      NODE_ENV: production
+      DEBUG: nodejs-docker-express:*

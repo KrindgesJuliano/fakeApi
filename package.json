@@ -1,0 +1,16 @@
+{
+  "name": "fakeapi",
+  "version": "1.0.0",
+  "description": "fake data for labs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Juliano Krindges",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "lodash": "^4.17.21"
+  }
+}
